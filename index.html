@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organiza tu estante de PC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div>
+      <h1>🖱️ Organiza tu estante de PC</h1>
+      <p>Aprende a utilizar el mouse mientras organizas componentes de computadora.</p>
+    </div>
+    <div class="marcador">
+      <span id="nivelTexto">Nivel 1 de 10</span>
+      <span id="puntos">⭐ 0 puntos</span>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="panel-superior">
+      <div class="progreso">
+        <div id="barraProgreso"></div>
+      </div>
+      <div class="datos-nivel">
+        <span id="dificultad">BÁSICO</span>
+        <span id="instruccion">Arrastra cada pieza hasta su silueta.</span>
+      </div>
+    </section>
+
+    <section class="zona-juego">
+      <div class="panel-estante">
+        <div class="titulo-panel">
+          <h2>🗄️ Mi estante de componentes</h2>
+          <span>Coloca cada pieza en su lugar</span>
+        </div>
+        <div id="estante" class="estante"></div>
+      </div>
+
+      <div class="panel-piezas">
+        <div class="titulo-panel">
+          <h2>🧩 Componentes disponibles</h2>
+          <span>Selecciona, arrastra o haz clic derecho</span>
+        </div>
+        <div id="piezas" class="piezas"></div>
+      </div>
+    </section>
+
+    <section class="ayuda">
+      <div class="ayuda-item">
+        <span class="icono-ayuda">👆</span>
+        <div><b>Clic izquierdo</b><small>Selecciona una pieza.</small></div>
+      </div>
+      <div class="ayuda-item">
+        <span class="icono-ayuda">✋</span>
+        <div><b>Arrastrar</b><small>Mueve la pieza a su silueta.</small></div>
+      </div>
+      <div class="ayuda-item">
+        <span class="icono-ayuda">🖱️</span>
+        <div><b>Clic derecho</b><small>Conoce la función del componente.</small></div>
+      </div>
+    </section>
+
+    <div id="mensaje" class="mensaje">¡Comienza organizando los componentes!</div>
+  </main>
+
+  <div id="modalInfo" class="modal">
+    <div class="modal-contenido">
+      <button id="cerrarInfo" class="cerrar">✕</button>
+      <img id="imagenInfo" src="" alt="Componente de computadora">
+      <h2 id="tituloInfo"></h2>
+      <p id="textoInfo"></p>
+      <button id="aceptarInfo" class="boton">Entendido</button>
+    </div>
+  </div>
+
+  <div id="pantallaInicio" class="pantalla">
+    <div class="tarjeta-inicio">
+      <div class="emoji-grande">🖱️💻</div>
+      <h1>¡Organiza tu estante de PC!</h1>
+      <p>Supera 10 niveles aprendiendo a usar el mouse y reconociendo los componentes de una computadora.</p>
+      <ul>
+        <li>3 niveles básicos.</li>
+        <li>3 niveles intermedios.</li>
+        <li>3 niveles avanzados.</li>
+        <li>1 desafío final.</li>
+      </ul>
+      <button id="iniciar" class="boton">COMENZAR JUEGO</button>
+    </div>
+  </div>
+
+  <div id="pantallaFinal" class="pantalla oculto">
+    <div class="tarjeta-inicio">
+      <div class="emoji-grande">🏆🎉</div>
+      <h1>¡Felicidades!</h1>
+      <p>Has completado los 10 niveles y aprendido a utilizar el mouse para organizar componentes de PC.</p>
+      <h2 id="puntuacionFinal"></h2>
+      <button id="reiniciar" class="boton">JUGAR OTRA VEZ</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
